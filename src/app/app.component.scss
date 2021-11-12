@@ -1,0 +1,335 @@
+.header {
+  border: 3px solid hsl(217, 16%, 45%);
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+  height: 100px;
+  padding: 20px;
+  width: 50%;
+
+  .score {
+    align-items: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100px;
+    width: 150px;
+  }
+
+  h1  {
+    bottom: 20px;
+    color: hsl(229, 25%, 31%);
+    font-size: 60px;
+    position: relative;
+  }
+
+  h2 {
+    color: hsl(229, 64%, 46%);
+    position: relative;
+    top: 50px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 80%;
+  }
+}
+
+.selector {
+  background-image: url("../assets/bg-triangle.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 30px auto;
+  height: 55%;
+  width: 50%;
+
+  .image {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    height: 105px;
+    width: 105px;
+    img {
+      padding: 25px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .paper {
+    border: 20px solid hsl(230, 89%, 62%);
+    left: 35%;
+    position: absolute;
+    top: 225px;
+    @media screen and (max-width: 1024px) {
+      left: 25%;
+    }
+    @media screen and (max-width: 768px) {
+      left: 15%;
+    }
+  }
+
+  .scissors {
+    border: 20px solid hsl(39, 89%, 49%);
+    right: 35%;
+    position: absolute;
+    top: 225px;
+    @media screen and (max-width: 1024px) {
+      right: 25%;
+    }
+    @media screen and (max-width: 768px) {
+      right: 15%;
+    }
+  }
+
+  .rock {
+    border: 20px solid hsl(349, 71%, 52%);
+    left: 45%;
+    position: absolute;
+    top: 425px;
+    @media screen and (max-width: 768px) {
+      left: 35%;
+    }
+  }
+}
+
+.selector-extended {
+  background-image: url("../assets/bg-pentagon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 30px auto;
+  height: 55%;
+  width: 50%;
+
+  .image {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    height: 105px;
+    width: 105px;
+    img {
+      padding: 25px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .paper {
+    border: 20px solid hsl(230, 89%, 62%);
+    right: 35%;
+    position: absolute;
+    top: 325px;
+    @media screen and (max-width: 1024px) {
+      right: 25%;
+    }
+    @media screen and (max-width: 768px) {
+      right: 10%;
+    }
+  }
+
+  .scissors {
+    border: 20px solid hsl(39, 89%, 49%);
+    right: 45%;
+    position: absolute;
+    top: 200px;
+    @media screen and (max-width: 768px) {
+      right: 35%;
+    }
+  }
+
+  .rock {
+    border: 20px solid hsl(349, 71%, 52%);
+    right: 40%;
+    position: absolute;
+    top: 475px;
+    @media screen and (max-width: 1024px) {
+      right: 30%;
+    }
+    @media screen and (max-width: 768px) {
+      right: 20%;
+    }
+  }
+
+  .lizard {
+    border: 20px solid hsl(261, 73%, 60%);
+    left: 40%;
+    position: absolute;
+    top: 475px;
+    @media screen and (max-width: 1024px) {
+      left: 30%;
+    }
+    @media screen and (max-width: 768px) {
+      left: 20%;
+    }
+  }
+
+  .spock {
+    border: 20px solid hsl(189, 59%, 53%);
+    left: 35%;
+    position: absolute;
+    top: 325px;
+    @media screen and (max-width: 768px) {
+      left: 35%;
+    }
+    @media screen and (max-width: 1024px) {
+      left: 25%;
+    }
+    @media screen and (max-width: 768px) {
+      left: 10%;
+    }
+  }
+}
+
+.result {
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 30px auto;
+  height: 55%;
+  width: 50%;
+
+  .image {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 50%;
+    height: 105px;
+    width: 105px;
+    img {
+      padding: 25px;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  h1, h2 {
+    color: hsl(0, 0%, 100%);
+  }
+
+  .your-choice {
+    left: 25%;
+    position: absolute;
+    top: 350px;
+    @media screen and (max-width: 768px) {
+      left: 5%;
+    }
+  }
+
+  .your-text {
+    left: 25%;
+    position: absolute;
+    top: 250px;
+    @media screen and (max-width: 768px) {
+      left: 5%;
+    }
+  }
+
+  .house-choice {
+    right: 25%;
+    position: absolute;
+    top: 350px;
+    @media screen and (max-width: 768px) {
+      right: 5%;
+    }
+  }
+
+  .house-text {
+    right: 25%;
+    position: absolute;
+    top: 250px;
+    @media screen and (max-width: 768px) {
+      right: 5%;
+    }
+  }
+
+  .result-message {
+    left: 46%;
+    position: absolute;
+    top: 300px;
+    @media screen and (max-width: 768px) {
+      left: 40%;
+    }
+  }
+
+  .mat-button {
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    color: hsl(349, 71%, 52%);
+    font-family: "Barlow Semi Condensed";
+    font-weight: 700;
+    left: 47%;
+    position: absolute;
+    top: 375px;
+    @media screen and (max-width: 768px) {
+      left: 40%;
+    }
+  }
+
+  .paper {
+    border: 20px solid hsl(230, 89%, 62%);
+  }
+
+  .scissors {
+    border: 20px solid hsl(39, 89%, 49%);
+  }
+
+  .rock {
+    border: 20px solid hsl(349, 71%, 52%);
+  }
+
+  .lizard {
+    border: 20px solid hsl(261, 73%, 60%);
+  }
+
+  .spock {
+    border: 20px solid hsl(189, 59%, 53%);
+  }
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 50px;
+  .mat-button {
+    border: 3px solid hsl(217, 16%, 45%);
+    border-radius: 10px;
+    color: hsl(0, 0%, 100%);
+    font-family: "Barlow Semi Condensed";
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin: 0 10px;
+    padding: 0 40px;
+  }
+  @media screen and (max-width: 768px) {
+    justify-content: center;
+    margin: 0;
+  }
+}
+
+.rules {
+  background: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  color: hsl(229, 25%, 31%);
+  height: 60%;
+  left: 25%;
+  padding: 15px;
+  position: absolute;
+  top: 150px;
+  width: 50%;
+  div {
+    display: flex;
+    justify-content: space-between;
+  }
+  .image {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width: 768px) {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 94%;
+  }
+}
